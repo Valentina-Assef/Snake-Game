@@ -8,12 +8,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background: #e3f2fd;
+    background-image: url(/assets/bg_snake.png);
+    background-position: center 0%;
+    background-repeat: space repeat;
+    background-size: auto 110%;
+    margin: 0;
 }
 
 .wrapper{
@@ -68,17 +73,17 @@ body{
     border-right: 1px solid #171b26;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 500px){
     .wrapper{
-        width: 90vmin;
-        height: 115vmin;
+        width: 90vw;
+        height: 70vh;
     }
     .game-details{
         font-size: 1rem;
         padding: 15px 27px;
     }
-    .controls i{
+    /* .controls i{
         padding: 15px 0;
         font-size: 1rem;
-    }
+    } */
 }
